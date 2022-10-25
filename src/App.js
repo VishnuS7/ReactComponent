@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Student from './components/student';
+import College from './components/college';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  class App extends Component{
+    render() {
+    return (
+    <>
+    <Student name="Vahn" number= "1997" enrolled = {[0,1]}/>
+    <Student name="Noa" number= "1998" enrolled = {[0]}/>
+    <Student name="Gala" number= "1995" enrolled = {[0,1,2]}/>
+    
+    <College name="George Brown" location="Casa Loma"/>
+    </>
+    
+
+
   );
 }
+}
+
 
 export default App;

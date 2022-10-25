@@ -1,0 +1,20 @@
+  h1 {
+    color : red;
+    font-size : 28px;
+}
+
+li {
+    color : blue;
+}
+
+table {
+    width : 70%;
+    border-collapse: collapse;
+}
+
+tr, td {
+    border-color : orange;
+    border-width : 5px;
+    border-style : solid;
+}
+
